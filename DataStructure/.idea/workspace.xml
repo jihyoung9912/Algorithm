@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="617951e9-97fa-4a24-9416-03fca975fd13" name="Changes" comment="" />
+    <list default="true" id="617951e9-97fa-4a24-9416-03fca975fd13" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2w/ex01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2w/ex02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2w/ex03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2w/two_system_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_1w/bin_dec_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_dec_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_1w/bin_dec_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_dec_02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_1w/bin_dec_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_dec_04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_1w/bin_oct_03.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_oct_03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_1w/bin_oct_05.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_oct_05.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +35,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EOrGq0O3Tr4POF9uA3qyt7Bo3y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +71,7 @@
       <updated>1662477380382</updated>
       <workItem from="1662477382196" duration="329000" />
       <workItem from="1662526936592" duration="3096000" />
-      <workItem from="1662530191061" duration="16000" />
+      <workItem from="1662530191061" duration="26365000" />
     </task>
     <servers />
   </component>
@@ -77,9 +90,18 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DataStructure$bin_dec_02.coverage" NAME="bin_dec_02 Coverage Results" MODIFIED="1662529400564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$bin_oct_05.coverage" NAME="bin_oct_05 Coverage Results" MODIFIED="1662541081307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$bin_dec_02.coverage" NAME="bin_dec_02 Coverage Results" MODIFIED="1662532048152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$ex02.coverage" NAME="ex02 Coverage Results" MODIFIED="1663127995876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2w" />
     <SUITE FILE_PATH="coverage/DataStructure$forPract.coverage" NAME="forPract Coverage Results" MODIFIED="1662527015631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
-    <SUITE FILE_PATH="coverage/DataStructure$bin_dec.coverage" NAME="bin_dec Coverage Results" MODIFIED="1662529250536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
     <SUITE FILE_PATH="coverage/DataStructure$while_pract.coverage" NAME="while_pract Coverage Results" MODIFIED="1662527170740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$bin_dec_01.coverage" NAME="bin_dec_01 Coverage Results" MODIFIED="1662551198791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$Pract.coverage" NAME="Pract Coverage Results" MODIFIED="1663056300906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$ex03.coverage" NAME="ex03 Coverage Results" MODIFIED="1663128757116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2w" />
+    <SUITE FILE_PATH="coverage/DataStructure$bin_dec_04.coverage" NAME="bin_dec_04 Coverage Results" MODIFIED="1662533776660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$two_system_iter.coverage" NAME="two_system_iter Coverage Results" MODIFIED="1663126631001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2w" />
+    <SUITE FILE_PATH="coverage/DataStructure$bin_oct_03.coverage" NAME="bin_oct_03 Coverage Results" MODIFIED="1662540921544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$bin_dec.coverage" NAME="bin_dec Coverage Results" MODIFIED="1662529250536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_1w" />
+    <SUITE FILE_PATH="coverage/DataStructure$ex01.coverage" NAME="ex01 Coverage Results" MODIFIED="1663127583778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2w" />
   </component>
 </project>

@@ -27,3 +27,18 @@ print(f'Binary number = {num_bin}')
 BIT = 3
 num_bin = num_bin[::-1]
 num_oct = []
+total_cnt = 0
+
+while total_cnt < len(num_bin):
+    sum_, cnt = 0, 0
+    while cnt < BIT:
+        if total_cnt >= len(num_bin):
+            break
+        sum_ += 2 ** cnt * int(num_bin[cnt])
+        cnt += 1
+        total_cnt += 1
+    num_oct.append(sum_)
+print(num_oct)
+num_oct = num_oct[::-1]
+num_oct = ''.join(map(str, num_oct))
+print(num_oct)
