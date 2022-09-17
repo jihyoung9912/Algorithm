@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="617951e9-97fa-4a24-9416-03fca975fd13" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2w/ex01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2w/ex02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2w/ex03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2w/two_system_iter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_1w/bin_dec_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_dec_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_1w/bin_dec_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_dec_02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_1w/bin_dec_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_dec_04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_1w/bin_oct_03.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_oct_03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_1w/bin_oct_05.py" beforeDir="false" afterPath="$PROJECT_DIR$/_1w/bin_oct_05.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +62,8 @@
       <updated>1662477380382</updated>
       <workItem from="1662477382196" duration="329000" />
       <workItem from="1662526936592" duration="3096000" />
-      <workItem from="1662530191061" duration="26365000" />
+      <workItem from="1662530191061" duration="27561000" />
+      <workItem from="1663341621448" duration="594000" />
     </task>
     <servers />
   </component>
