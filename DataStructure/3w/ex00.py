@@ -1,5 +1,5 @@
 class Element:
-    def __init__(self, num=0): #defauklt argument, parameter
+    def __init__(self, num=0): #default argument, parameter
         self.num = num
 
     def __str__(self):

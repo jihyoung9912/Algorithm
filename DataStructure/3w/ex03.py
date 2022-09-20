@@ -19,8 +19,8 @@ class Element:
         if not isinstance(other, Element):
             raise Exception("should not be different type")
 
-        add_ = self.num - other.num
-        return Element(add_)
+        sub = self.num - other.num
+        return Element(sub)
 
-elem = Element(20) - Element(10)
-print(elem)
+# elem = Element(55) - Element(10)
+# print(elem)

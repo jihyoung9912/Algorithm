@@ -1,7 +1,7 @@
 import math
 
 BASE = 2
-num_dec = 11
+num_dec = 54
 num_bin = ''
 print(f"Decimal number = {num_dec}")
 
