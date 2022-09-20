@@ -1,12 +1,17 @@
-import math
+BASE = 2
+num_dec = 11
+print(f"Decimal number = {num_dec}")
 
-num = 5923
-cnt_iter = int(math.log10(num))
-sum_ = 0
+num_bin = ''
 
-while cnt_iter >= 0:
-    sum_ += num // 10 ** cnt_iter
-    num = num % 10 ** cnt_iter
-    cnt_iter -= 1
+num_dec, r = num_dec // BASE, num_dec % BASE
+num_bin = str(r) + num_bin
 
-print(sum_)
+num_dec, r = num_dec // BASE, num_dec % BASE
+num_bin = str(r) + num_bin
+
+num_dec, r = num_dec // BASE, num_dec % BASE
+num_bin = str(r) + num_bin
+
+num_bin = str(num_dec) + num_bin
+print(num_bin)
