@@ -1,12 +1,8 @@
 def solution(lst):
-    freq = [0] * 256
-    for i in lst:
-        freq[i] += 1    #lst의 인자를 i로 받고, i index에 빈도수를 더함
-
-    ret = [i for i in range(len(freq)) if freq[i] == max(freq)] #i가 freq를 돌며 빈도수의 최대값을 가진 값을 뽑아옴
-    if len(lst) == len(ret):
+    freq = {x:lst.count(x) for x in set(lst)}
+    if len(freq) == 1 or len(freq) == len(lst):
         return []
-    return ret
+    return [x for x in freq if freq[x] == max(freq.values())]
 
 
 print(solution([1, 2, 3, 4, 5, 5])) #[5]
