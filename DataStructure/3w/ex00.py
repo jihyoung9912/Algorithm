@@ -1,9 +1,8 @@
 class Element:
-    def __init__(self, num=0): #default argument, parameter
+    def __init__(self, num = 0):
         self.num = num
-
     def __str__(self):
-        return f"Element:{self.num}"
+        return f'Element : {self.num}'
 
 elem = Element()
 print(elem)
