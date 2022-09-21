@@ -1,7 +1,6 @@
 class Barebone:
     pass
 
-
 bb_01 = Barebone()
 print(id(bb_01))
 
