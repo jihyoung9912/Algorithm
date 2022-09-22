@@ -10,6 +10,7 @@ class Elements:
 
     def __setitem__(self, id, elem):
         self.elems[id] = elem
+
     def __getitem__(self, id):
         return self.elems[id]
 

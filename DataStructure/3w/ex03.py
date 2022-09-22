@@ -16,5 +16,5 @@ class Element:
         sub_ = self.num - other.num
         return Element(sub_)
 
-elem = Element(50) - Element(30)
-print(elem)
+# elem = Element(50) - Element(30)
+# print(elem)
