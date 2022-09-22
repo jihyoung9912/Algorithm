@@ -1,21 +1,19 @@
 from ex03 import Element
 
 class Elements:
-    def __init__(self, cap=10):
-        self.cap = cap
-        self.elems = [None] * cap
+    def __init__(self, num=10):
+        self.num = num
+        self.lst = [None] * num
 
-    def __repr__(self):
-        return f"Element: {self.cap}"
-
-    def __setitem__(self, id, elem):
-        self.elems[id] = elem
+    def __setitem__(self, id, value):
+        self.lst[id] = value
 
     def __getitem__(self, id):
-        return self.elems[id]
+        return self.lst[id]
+
 
 elems = Elements()
 elems[0] = Element(10)
 elems[1] = Element(20)
-print(elems.elems[0])
-print(elems.elems[1])
+print(elems[0])
+print(elems[1])
