@@ -8,9 +8,8 @@ class Elements:
     def __setitem__(self, id, value):
         self.lst[id] = value
 
-    def __getitem__(self, id):
-        return self.lst[id]
-
+    def __getitem__(self, item):
+        return self.lst[item]
 
 elems = Elements()
 elems[0] = Element(10)

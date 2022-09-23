@@ -5,8 +5,10 @@ class Elements:
         self.num = num
         self.lst = [None] * num
 
-    def __setitem__(self, key, value):
-        self.lst[key] = value
+    def __setitem__(self, id, value):
+        self.lst[id] = value
+
+
 
 elems = Elements()
 elems[0] = Element(10)
