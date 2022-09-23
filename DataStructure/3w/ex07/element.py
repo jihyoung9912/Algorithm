@@ -16,4 +16,3 @@ class Element:
         return Element(add_)
 
 elem = Element(10) + Element(10)
-print(elem)
