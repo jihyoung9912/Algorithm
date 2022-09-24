@@ -17,4 +17,5 @@ class Elements:
 elems = Elements()
 elems[0] = Element(10)
 elems[1] = Element(20)
+elems[1] = Element(20)
 print(elems)
