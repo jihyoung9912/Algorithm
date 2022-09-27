@@ -7,6 +7,9 @@ class Person:
     def __str__(self):
         return f'{self.name}, {self.age}, {self.salary}'
 
-print(Person('James', 20, 100.0))
-print(Person('Edward', 21))
-
+p1 = Person()
+p1.name = "James"; p1.age = 20; p1.salary = 100.0
+p2 = Person()
+p2.name = "Edward"; p2.age = 21
+print(p1)
+print(p2)

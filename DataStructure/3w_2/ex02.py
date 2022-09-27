@@ -1,5 +1,6 @@
 v = None
 if not v:
+    # not None --> True
     print("Here1")
 
 if v is None:
