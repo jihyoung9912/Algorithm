@@ -1,3 +1,5 @@
+import copy
+
 class Polynomial:
     def __init__(self, degree = 0):
         self.degree = degree
@@ -68,15 +70,29 @@ class Polynomial:
 
         return poly
 
+    def __mul__(self, other):
+        poly = Polynomial(self.get_lead_exp() + other.get_lead_exp())
+
+        while not self.is_zero():
+            exp_01 = self.get_lead_exp()
+            tmp = copy.deepcopy(other)  #깊은 복사 얇은 복사
+            while not tmp.is_zero():
+                exp_02 = tmp.get_lead_exp()
+                poly.attach(self.get_coef(exp_01) * tmp.get_coef(exp_02), exp_01 + exp_02)
+                tmp.remove(exp_02)
+            self.remove(exp_01)
+        return poly
+
 if __name__ == "__main__":
-    poly1 = Polynomial(20)
-    poly1.attach(3, 20).attach(2, 5).attach(4, 0)
-    print(poly1)
 
-    poly2 = Polynomial(4)
-    poly2.attach(1, 4).attach(10, 3).attach(3, 2).attach(1, 0)
-    print(poly2)
+    poly1 = Polynomial(2)
+    poly1.attach(2, 2).attach(3, 1).attach(1, 0)
+    print("poly1 =\n", poly1)
 
-    poly = poly1 + poly2
-    print("poly1 + poly2 = ")
-    print(poly)
+    poly2 = Polynomial(1)
+    poly2.attach(3, 1).attach(-2, 0)
+    print("poly2 =\n", poly2)
+
+    poly = poly1 * poly2
+    print()
+    print("poly1 * poly2 =\n", poly)

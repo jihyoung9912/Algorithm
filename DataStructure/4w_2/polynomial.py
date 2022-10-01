@@ -39,12 +39,9 @@ class Polynomial:
 
     def __str__(self):
         ret = ""
-        for coef, exp in [
-            (self.coef[i], i) for i in range(self.degree + 1) if
-            self.coef[i] != 0
-        ][::-1]:
+        for coef, exp in [(self.coef[i], i) for i in range(self.degree + 1) if self.coef[i] != 0][::-1]:
             ret += f"({coef})x^{exp} + "
-            return f"{ret}\b\b"
+        return f"{ret}\b\b"
 
 
 if __name__ == "__main__":
