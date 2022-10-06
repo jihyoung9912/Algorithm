@@ -34,20 +34,21 @@ if __name__ == "__main__":
     stack = Stack()
     print("Length:", len(stack))
     print("Is Empty:", stack.is_empty())
+
     N = 4
     print("Push from 1 to", N)
     for i in range(1, N + 1):
         print("Push:", i)
-    stack.push(i)
-    print("Len:", len(stack), "Stack:", stack)
-    print("Peek:", stack.peek())
+        stack.push(i)
+        print("Len:", len(stack), "Stack:", stack)
+        print("Peek:", stack.peek())
     print("Is Empty:", stack.is_empty())
     for i in stack:
         print("Element:", i)
     print()
     for i in range(N):
         print("Peek and Pop: ", stack.peek())
-    stack.pop()
+        stack.pop()
     print("Stack:", stack)
     print("Length:", len(stack))
     print("Is Empty:", stack.is_empty())

@@ -27,7 +27,16 @@ class Queue:
         return str(self.arr)
 
     def __iter__(self):
-        return iter(self.arr[self.front])
+        # pos = 0
+        # while pos < len(self):
+        #     yield self.arr[pos]
+        #     pos += 1
+        tmp = self.front
+        while self.arr[self.front] != None:
+            yield self.arr[self.front]
+            self.front = (self.front + 1) % 8
+        self.front = tmp
+        # return iter(self.arr[self.front])
 
     def enqueue(self, elem):
         self.rear = (self.rear + 1) % 8
@@ -68,8 +77,8 @@ if __name__ == "__main__":
     print(queue)
     queue.dequeue()
     print(queue)
-    # for i in queue:
-    #     print("Element:", i)
+    for i in queue:
+        print("Element:", i)
     print("Peek:", queue.peek())
     while not queue.is_empty():
         queue.dequeue()
