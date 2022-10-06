@@ -18,7 +18,6 @@ class Queue:
     def peek(self):
         if self.is_empty():
             raise Exception("queue is empty.")
-        self.front += 1
         return self.arr[self.front]
 
     def __len__(self):
@@ -28,18 +27,23 @@ class Queue:
         return str(self.arr)
 
     def __iter__(self):
-        raise NotImplemented
-
-    def __iter__(self):
-        raise NotImplemented
+        return iter(self.arr[self.front])
 
     def enqueue(self, elem):
-        tmp = (self.rear + 1) % 8
-        self.arr[tmp] = elem
-        self.rear += 1
+        self.rear = (self.rear + 1) % 8
+        self.arr[self.rear] = elem
+
+        if self.front == -1:
+            self.front += 1
 
     def dequeue(self):
+        self.front = self.front % 8
         self.arr[self.front] = None
+        self.front += 1
+
+        if self.front == self.rear:
+            self.arr[self.front] = None
+            self.front = self.rear = -1
 
 
 if __name__ == "__main__":
@@ -66,7 +70,7 @@ if __name__ == "__main__":
     print(queue)
     # for i in queue:
     #     print("Element:", i)
-    # print("Peek:", queue.peek())
-    # while not queue.is_empty():
-    #     queue.dequeue()
-    # print(queue)
+    print("Peek:", queue.peek())
+    while not queue.is_empty():
+        queue.dequeue()
+    print(queue)
