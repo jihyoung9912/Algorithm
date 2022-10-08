@@ -50,22 +50,29 @@ class Polynomial:
             exp_02 = other.get_lead_exp()
 
             if exp_01 > exp_02:
-                # remove 를 적용하여야, lead_exp 의 사용이 의미가 있다.
-                # remove 에 의해 특정 exp 의 coef 가 0 이 되므로
-                # 이후 read_exp 시 다시 읽히는 기회가 사라진다.
-                pass
+                poly.attach(self.get_coef(exp_01), exp_01)
+                self.remove(exp_01)
             elif exp_01 < exp_02:
-                pass
+                poly.attach(other.get_coef(exp_02), exp_02)
+                other.remove(exp_02)
             else:
-                pass
-            return poly
+                coef = self.get_coef(exp_01) + other.get_coef(exp_02)
+                exp = exp_01
+                poly.attach(coef, exp)
+
+                self.remove(exp_01)
+                other.remove(exp_02)
+
+        return poly
 
 
 if __name__ == "__main__":
-    poly = Polynomial(20)
-    poly.attach(3, 20).attach(2, 5).attach(4, 0)
+    poly1 = Polynomial(20)
+    poly1.attach(3, 20).attach(2, 5).attach(4, 0)
+    print(poly1)
+    poly2 = Polynomial(4)
+    poly2.attach(1, 4).attach(10, 3).attach(3, 2).attach(1, 0)
+    print(poly2)
+    poly = poly1 + poly2
+    print("poly1 + poly2 = ")
     print(poly)
-    x = 3
-    res = poly.evaluate(x)
-    print(f"{poly} = {res}, where x = {x}")
-    print(poly.get_lead_exp())
