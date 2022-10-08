@@ -9,8 +9,7 @@ class OrderedList:
         return not bool(self.arr)
 
     def add(self, num):
-        # return self.arr.append(num)
-        if not self.arr:
+        if not self.arr:        # self.arr이 비어있을 때, 최초에만
             self.arr.append(num)
             return
         cur = 0
@@ -39,18 +38,17 @@ class OrderedList:
 
 
 *data, = 53, 17, 34, 23, 15, 43
-# print(data)
+print(data)
 
 o = OrderedList()
-# print(o.is_empty())
+print(o.is_empty())
 
 for i in data:
     o.add(i)
-print(o.arr)
+
 print(o.is_empty())
 print(o)
-
-o.remove(43)
+o.remove(23)
 print(o)
 
 print(o.search(53))
