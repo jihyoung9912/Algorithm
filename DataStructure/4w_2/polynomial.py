@@ -6,19 +6,18 @@ class Polynomial:
         self.coef = [0] * (self.degree + 1)
 
     def get_lead_exp(self):
-        for i in range(self.degree, -1, -1):
+        for i in range(self.degree, -2, -1):
             if self.coef[i] != 0:
                 return i
-            else:
-                return "Fail"
+            elif i <= -1:
+                raise Exception("Failed to get_lead_exp")
 
     def evaluate(self, x):
-        res = 0
-        for i in range(self.degree + 1):
+        sum_ = 0
+        for i in range(0, self.degree + 1):
             if self.coef[i] != 0:
-                res += self.coef[i] * x ** i
-        return res
-
+                sum_ += x ** i * self.coef[i]
+        return sum_
 
     def get_coef(self, exp):
         return self.coef[exp]
@@ -38,16 +37,16 @@ class Polynomial:
         self.coef[exp] = 0
 
     def __str__(self):
-        ret = ""
-        for coef, exp in [(self.coef[i], i) for i in range(self.degree + 1) if self.coef[i] != 0][::-1]:
-            ret += f"({coef})x^{exp} + "
-        return f"{ret}\b\b"
+        poly = ''
+        for i in range(self.degree, -1, -1):
+            if self.coef[i] != 0:
+                poly += str(f"({self.coef[i]})x^{i} + ")
+        return poly + "\b\b"
 
 
 if __name__ == "__main__":
     poly = Polynomial(20)
     poly.attach(3, 20).attach(2, 5).attach(4, 0)
-
     print(poly)
     x = 3
     res = poly.evaluate(x)
