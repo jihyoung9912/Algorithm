@@ -91,7 +91,7 @@ class SinglyLinkedList:
                 temp.next = new_node
 
     def insert_before(self, node, node_new):
-        new_node = self.next_ = Node(node_new)
+        add_node = self.next_ = Node(node_new)
 
         temp = self.head
         num = 0
@@ -101,15 +101,15 @@ class SinglyLinkedList:
 
         temp = self.head
         if num == 0:
-            new_node.next = self.head
-            self.head = new_node
+            add_node.next = self.head
+            self.head = add_node
         else:
             for _ in range(num):
                 if temp is not None:
                     temp = temp.next
             if temp is not None:
-                temp.next = new_node
-                new_node.next = temp.next.next
+                temp.next = add_node
+                add_node.next = temp.next.next
 
     def delete(self, node):
         temp = self.head
@@ -161,16 +161,17 @@ list_.delete_head()
 print("4", list_)
 #
 list_.add_tail(Node(150))
-# list_.add_tail(Node(10))
-# list_.add_tail(Node(20))
-# list_.add_tail(Node(30))
-list_.insert_before(Node(150), Node(999))
+list_.add_tail(Node(10))
+list_.add_tail(Node(20))
+list_.add_tail(Node(30))
 print("5", list_)
-#
+list_.insert_before(Node(10), Node(999))
+print("5", list_)
+
 # list_.add_head(Node(50))
 # list_.add_tail(Node(100))
 # print("6", list_)
-#
+#w
 # for i in list_:
 #     print("Element:", i)
 #
@@ -182,6 +183,6 @@ print("5", list_)
 #
 # list_.insert_before(Node(50), Node(750))
 # print("9", list_)
-#
+
 # for i in list_:
 #     print("Element:", i)
