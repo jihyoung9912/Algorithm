@@ -76,8 +76,6 @@ class CircularSinglyLinkedList:
             new_node.next = temp.next
             temp.next = new_node
 
-
-
     def insert_before(self, node, node_new):
         new_node = Node(node_new)
 
@@ -86,8 +84,6 @@ class CircularSinglyLinkedList:
             temp = temp.next
         new_node.next = temp.next
         temp.next = new_node
-
-
 
     # def delete(self, node):
 
@@ -109,7 +105,6 @@ class CircularSinglyLinkedList:
                         result += ", "
                 result += ", " + str(self.tail) + "]"
                 return result
-
 
 
 list_ = CircularSinglyLinkedList()
@@ -140,6 +135,6 @@ print("6", list_)
 list_.add_tail(Node(700))
 print("7", list_)
 #
-list_.insert_after(Node(200), Node(250))
+list_.insert_after(Node(999), Node(250))
 print("8", list_)
 #
