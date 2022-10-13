@@ -68,20 +68,35 @@ class DoublyLinkedList:
 
     def insert_before(self, node, node_new):
         new_node = Node(node_new)
+        tmp = self.tail
+
+        while self.tail != Node(node):
+            self.tail = self.tail.llink
+        if self.tail.llink is None:
+            self.add_head(new_node)
+        else:
+            temp = self.tail.llink
+            temp.rlink = new_node
+            self.tail.llink = new_node
+            new_node.llink = temp
+            new_node.rlink = self.tail
+        self.tail = tmp
 
     def insert_after(self, node, node_new):
         new_node = Node(node_new)
+        tmp = self.tail
 
-        if self.tail == Node(node):
+        while self.tail != Node(node):
+            self.tail = self.tail.llink
+        if self.tail.rlink is None:
             self.add_tail(new_node)
         else:
-            tmp = self.tail
-            while self.tail != Node(node):
-                self.tail = self.tail.llink
             temp = self.tail.rlink
             self.tail.rlink = new_node
+            new_node.llink = self.tail
             new_node.rlink = temp
-            self.tail = tmp
+            temp.llink = new_node
+        self.tail = tmp
 
     def __str__(self):
         result = "["
@@ -121,12 +136,14 @@ list_.add_tail(Node(100))
 list_.add_tail(Node(10))
 print("5", list_)
 
-list_.insert_before(Node(200), Node(999))
+list_.insert_before(Node(100), Node(999))
+list_.insert_before(Node(999), Node(888))
 print("6", list_)
 
-# list_.add_head(Node(1000))
-# list_.add_tail(Node(1))
-# print("7", list_)
-#
-# list_.insert_after(Node(1000), Node(0))
-# print("8", list_)
+list_.add_head(Node(1000))
+list_.add_tail(Node(1))
+print("7", list_)
+
+list_.insert_after(Node(888), Node(777))
+list_.insert_after(Node(777), Node(666))
+print("8", list_)
