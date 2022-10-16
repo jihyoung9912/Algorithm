@@ -37,6 +37,7 @@ class SinglyLinkedList:
             self.next_ = self.next_.next
             return temp
         else:
+            self.next_ = self.head
             raise StopIteration
 
     def add_head(self, node_new):
@@ -99,9 +100,12 @@ class SinglyLinkedList:
         else:
             while iterator.next != Node(node):
                 iterator = iterator.next
-            temp = iterator.next
+            # temp = iterator.next
+            # iterator.next = new_node
+            # new_node.next = temp
+
+            new_node.next = iterator.next
             iterator.next = new_node
-            new_node.next = temp
 
     def delete(self, node):
         node = Node(node)
@@ -154,18 +158,18 @@ print("6", list_)
 
 # for i in list_:
 #     print("Element:", i)
+#
+# list_.add_tail(Node(700))
+# print("7", list_)
+#
+# list_.insert_after(Node(1), Node(30))
+# print("8", list_)
 
-list_.add_tail(Node(700))
-print("7", list_)
-
-list_.insert_after(Node(50), Node(30))
-print("8", list_)
-
-list_.insert_before(Node(150), Node(10))
-print("9", list_)
-
-list_.delete(Node(50))
-print("10", list_)
-
-for i in list_:
-    print("Element:", i)
+# list_.insert_before(Node(150), Node(10))
+# print("9", list_)
+#
+# list_.delete(Node(50))
+# print("10", list_)
+#
+# for i in list_:
+#     print("Element:", i)
