@@ -29,4 +29,4 @@ if __name__ == "__main__":
     for i in arr:
         print(id(i), i)
 
-    print(sum(arr)) 
+    print(sum(arr))
