@@ -10,7 +10,6 @@ class OrderedList:
 
     def add(self, elem):
         cur = 0
-
         while cur < len(self) and self[cur] <= elem:
             cur += 1
 
