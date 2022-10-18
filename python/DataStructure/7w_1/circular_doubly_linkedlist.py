@@ -173,36 +173,36 @@ class CircularDoublyLinkedList:
         return result
 
 
-list_ = CircularDoublyLinkedList()
-list_.add_tail(Node(10))
-list_.add_tail(Node(20))
-list_.add_head(Node(30))
-print(list_)
-for i in list_:
-    print("Element:", i)
-print()
-it = iter(list_)
-while True:
-    try:
-        i = next(it)
-    except StopIteration:
-        break
-    print("Element:", i)
-print(list_)
-while not list_.is_empty():
-    list_.delete_tail()
-    print(list_)
-list_.add_tail(Node(20))
-list_.add_head(Node(30))
-print(list_)
-list_.insert_after(Node(20), Node(40))
-list_.insert_before(Node(30), Node(10))
-print(list_)
-list_.delete(Node(40))
-print(list_)
-list_.delete_head()
-print(list_)
-list_.delete(Node(20))
-print(list_)
-list_.delete(Node(30))
-print(list_)
+# list_ = CircularDoublyLinkedList()
+# list_.add_tail(Node(10))
+# list_.add_tail(Node(20))
+# list_.add_head(Node(30))
+# print(list_)
+# for i in list_:
+#     print("Element:", i)
+# print()
+# it = iter(list_)
+# while True:
+#     try:
+#         i = next(it)
+#     except StopIteration:
+#         break
+#     print("Element:", i)
+# print(list_)
+# while not list_.is_empty():
+#     list_.delete_tail()
+#     print(list_)
+# list_.add_tail(Node(20))
+# list_.add_head(Node(30))
+# print(list_)
+# list_.insert_after(Node(20), Node(40))
+# list_.insert_before(Node(30), Node(10))
+# print(list_)
+# list_.delete(Node(40))
+# print(list_)
+# list_.delete_head()
+# print(list_)
+# list_.delete(Node(20))
+# print(list_)
+# list_.delete(Node(30))
+# print(list_)
