@@ -23,14 +23,6 @@ class SinglyLinkedList:
     def __iter__(self):
         return self
 
-    # def __next__(self):
-    #     if self.next_ is not None:
-    #         temp = self.next_
-    #         self.next_ = self.next_.next
-    #         return temp
-    #     else:
-    #         raise StopIteration
-
     def __next__(self):
         if self.next_ is not None:
             temp = self.next_
