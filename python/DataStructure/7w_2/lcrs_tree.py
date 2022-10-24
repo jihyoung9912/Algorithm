@@ -7,7 +7,23 @@ class Tree:
 
     def build(self, sexpr):
         stack = Stack()
-        raise NotImplemented
+        it = iter(sexpr)
+        root = None
+        while stack.is_empty() or it:
+            try:
+            token = next(it)
+        except StopIteration:
+        break
+        if token != ")":
+            stack.push(self.TreeNode(token))
+        continue
+        prev = None
+        while stack.peek().elem != "(":
+            node = stack.peek()
+        stack.pop()
+        node.right_sibling = prev
+        prev = node
+        stack.pop()
 
 
 class TreeNode:
@@ -22,31 +38,31 @@ class TreeNode:
     def __str__(self):
         return f"{self.elem}"
 
-# sexpr = "( A ( B ( E ( K L ) F ) C ( G ) D ( H ( M ) I J ) ) )"
-# sexpr = sexpr.split()
-# tree = Tree()
-# tree.build(sexpr)
-# root = tree.root
-# print(root)
-# b = root.left_child
-# print(b)
-# e = b.left_child
-# print(e)
-# k = e.left_child
-# print(k)
-# l = k.right_sibling
-# print(l)
-# f = e.right_sibling
-# print(f)
-# c = b.right_sibling
-# print(c)
-# d = c.right_sibling
-# print(d)
-# g = c.left_child
-# print(g)
-# h = d.left_child
-# print(h)
-# i = h.right_sibling
-# print(i)
-# j = i.right_sibling
-# print(j)
+sexpr = "( A ( B ( E ( K L ) F ) C ( G ) D ( H ( M ) I J ) ) )"
+sexpr = sexpr.split()
+tree = Tree()
+tree.build(sexpr)
+root = tree.root
+print(root)
+b = root.left_child
+print(b)
+e = b.left_child
+print(e)
+k = e.left_child
+print(k)
+l = k.right_sibling
+print(l)
+f = e.right_sibling
+print(f)
+c = b.right_sibling
+print(c)
+d = c.right_sibling
+print(d)
+g = c.left_child
+print(g)
+h = d.left_child
+print(h)
+i = h.right_sibling
+print(i)
+j = i.right_sibling
+print(j)
