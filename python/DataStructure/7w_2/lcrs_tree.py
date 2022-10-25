@@ -6,24 +6,7 @@ class Tree:
         self.root = None
 
     def build(self, sexpr):
-        stack = Stack()
-        it = iter(sexpr)
-        root = None
-        while stack.is_empty() or it:
-            try:
-            token = next(it)
-        except StopIteration:
-        break
-        if token != ")":
-            stack.push(self.TreeNode(token))
-        continue
-        prev = None
-        while stack.peek().elem != "(":
-            node = stack.peek()
-        stack.pop()
-        node.right_sibling = prev
-        prev = node
-        stack.pop()
+        raise NotImplemented
 
 
 class TreeNode:
