@@ -1,5 +1,6 @@
 from array import Array
 
+
 class Stack:
     CAPACITY = 10
 
@@ -45,6 +46,3 @@ class Stack:
 
     def __str__(self):
         return str(self.arr)
-
-
-

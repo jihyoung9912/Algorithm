@@ -21,8 +21,10 @@ class TreeNode:
     def __str__(self):
         return f"{self.elem}"
 
+
 sexpr = "( A ( B ( E ( K L ) F ) C ( G ) D ( H ( M ) I J ) ) )"
 sexpr = sexpr.split()
+print(sexpr)
 # tree = Tree()
 # tree.build(sexpr)
 # root = tree.root
