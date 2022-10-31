@@ -88,7 +88,7 @@ print(j)
 
 # degree : 자식노드 개수
 # depth : root node에서 나까지
-# height : 나에서 leaf node까지
+# height : leaf node에서 나까지
 # degree of tree : 최대 자식노드 개수 (degree 최대값)
 # size of tree : tree를 구성하고 있는 node 개수
 # height of tree : 최대 나에서 leaf node까지
