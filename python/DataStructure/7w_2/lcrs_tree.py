@@ -10,6 +10,7 @@ class Tree:
         it = iter(sexpr)
 
         root = None
+
         while stack.is_empty() or it:
             try:
                 token = next(it)
@@ -86,7 +87,7 @@ print(i)
 j = i.right_sibling
 print(j)
 
-# degree : 자식노드 개수
+# degree : 자식노드 개수, 차수
 # depth : root node에서 나까지
 # height : leaf node에서 나까지
 # degree of tree : 최대 자식노드 개수 (degree 최대값)
@@ -101,3 +102,5 @@ print(j)
 # descendent : 자손(leaf node까지), 자식과 헷갈리지 말 것
 # level : node가 존재하는 층
 # waisting memory
+# k = degree of the tree, n = size of the tree
+# n(k-1) + 1 // if n = 13, k = 3 --> 27
