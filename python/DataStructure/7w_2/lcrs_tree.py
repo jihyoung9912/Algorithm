@@ -10,7 +10,6 @@ class Tree:
         it = iter(sexpr)
 
         root = None
-
         while stack.is_empty() or it:
             try:
                 token = next(it)
@@ -64,28 +63,28 @@ tree = Tree()
 tree.build(sexpr)
 root = tree.root
 print(root)
-b = root.left_child
-print(b)
-e = b.left_child
-print(e)
-k = e.left_child
-print(k)
-l = k.right_sibling
-print(l)
-f = e.right_sibling
-print(f)
-c = b.right_sibling
-print(c)
-d = c.right_sibling
-print(d)
-g = c.left_child
-print(g)
-h = d.left_child
-print(h)
-i = h.right_sibling
-print(i)
-j = i.right_sibling
-print(j)
+# b = root.left_child
+# print(b)
+# e = b.left_child
+# print(e)
+# k = e.left_child
+# print(k)
+# l = k.right_sibling
+# print(l)
+# f = e.right_sibling
+# print(f)
+# c = b.right_sibling
+# print(c)
+# d = c.right_sibling
+# print(d)
+# g = c.left_child
+# print(g)
+# h = d.left_child
+# print(h)
+# i = h.right_sibling
+# print(i)
+# j = i.right_sibling
+# print(j)
 
 # degree : 자식노드 개수, 차수
 # depth : root node에서 나까지
