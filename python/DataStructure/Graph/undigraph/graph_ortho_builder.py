@@ -12,6 +12,7 @@ class NodeEdge:
     def __str__(self):
         return f"({self.tail}:{self.head}:{self.link_head}:{self.link_tail})"
 
+
 def read_input(name_file="input.dat"):
     mat = []
     with open(name_file) as f:
@@ -20,6 +21,7 @@ def read_input(name_file="input.dat"):
             mat.append(row)
     return mat
 
+
 def print_mat(mat):
     rows, cols = len(mat), len(mat[0])
     print("Input matrix")
@@ -27,6 +29,7 @@ def print_mat(mat):
         for col in range(cols):
             print(f"{mat[row][col]}", end=" ")
         print("\b")
+
 
 class GraphOrthoBuilder:
     @staticmethod
@@ -37,8 +40,8 @@ class GraphOrthoBuilder:
         size = len(mat)
         ret = [NodeEdge(tail=i) for i in range(size)]
 
-
         return ret
+
 
 class GraphOrtho:
     def __init__(self, heads=None):
@@ -59,6 +62,7 @@ class GraphOrtho:
             sum_ += 1
             node = node.link_head
         return sum_
+
 
 if __name__ == "__main__":
     mat_ = read_input("input_g4.dat")
