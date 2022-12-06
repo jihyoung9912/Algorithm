@@ -145,7 +145,7 @@ class GraphAov:
         self.__build_indegree()
         stack = Stack()
         _ = [stack.push(v) for v in self.list_ if v.indegree == 0]
-        
+
         while not stack.is_empty():
             head = stack.peek()
             stack.pop()
