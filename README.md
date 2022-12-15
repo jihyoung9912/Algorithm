@@ -1,8 +1,8 @@
 # Algorithm
 + **Arrays**
-+ Stack
-+ Queue
-+ LinkedList
-+ Tree
-+ Graph
-+ Sotring
++ **Stack**
++ **Queue**
++ **LinkedList**
++ **Tree**
++ **Graph**
++ **Sotring**
