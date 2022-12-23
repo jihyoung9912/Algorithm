@@ -1,13 +1,17 @@
-let a = () => {
-  console.log('a')
-}
+const readline = require('readline');
 
-let b = () => {
-  console.log('b')
-}
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
-let c = () => {
-  console.log('c')
-}
+let count = 0;
 
-a()
+rl.on('line', (input) => {
+  console.log(`Recived : ${input}`);
+  count += 1;
+  if (count === 3) {
+    rl.close();
+  }
+  // 위의 경우 입력을 3번 받은 후 close한다
+});
