@@ -1,21 +1,35 @@
-class Item:
-    def __init__(self, data):
-        self.data = data
-        self.link = None
+def calculate_vacation_days():
+    days_worked = []
+    vacation_days = []
+    max_vacation_days = 0
 
-    def __str__(self):
-        return f"Item : {self.data}"
+    while True:
+        days = int(input())
+        if days == 0:
+            break
 
-def explore(i):
-    while i is not None:
-        print(f"({i})", end='->')
-        i = i.link
-    print('\b\b')
+        days_worked.append(days)
 
-item0 = Item(0)
-item1 = Item(1)
-item2 = Item(2)
-item0.link = item1
-item1.link = item2
+        if len(vacation_days) > 5 and days < (max_vacation_days * 0.2):
+            print("No Holiday")
+            continue
 
-explore(item0)
+        basic_vacation = 2
+        additional_vacation = days // 30 * 3
+        total_vacation = basic_vacation + additional_vacation
+
+        if days % 7 == 0:
+            total_vacation += 5
+
+        if len(vacation_days) > 0 and days > sum(vacation_days) / len(vacation_days):
+            total_vacation += 15
+
+        vacation_days.append(total_vacation)
+        max_vacation_days = max(max_vacation_days, total_vacation)
+
+        print(f"{total_vacation} Holidays")
+
+    print(f"Most Holidays: {max_vacation_days}")
+
+
+calculate_vacation_days()
